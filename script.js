@@ -1,34 +1,17 @@
-var Seunome = prompt ("Qual é o seu Nome?");
-document.write(Seunome);
-console.log(Seunome);
+const seunome = prompt ("Qual é o seu Nome?");
+document.write("Bem-vindo(a) " + seunome);
+console.log(seunome);
  
-d = new Date();
-hour = d.getHours();
-if(hour < 5)
-{
-   document.write("Boa Noite");
-   alert("boa noite");
-}
-else
-if(hour < 8)
-{
-   document.write("Bom Dia");
-   alert("Bom dia");
-}
-else
-if(hour < 12)
-{
-   document.write("Bom Dia!");
-   alert("Boa Dia");
-}
-else
-if(hour < 18)
-{
-   document.write("Boa tarde");
-   alert("boa tarde");
-}
-else
-{
-   document.write("Boa noite");
-   alert("boa noite");
+const d = new Date();
+const hour = d.getHours();
+
+if(hour >= 6 && hour < 12) {
+   document.write("<br> Bom dia.");
+   alert("Bom dia!");
+} else if(hour < 18) {
+   document.write("<br> Boa tarde.");
+   alert("Boa tarde!");
+} else{
+   document.write("<br> Boa noite.");
+   alert("Boa noite!");
 }

@@ -7,7 +7,7 @@ const hour = d.getHours();
 
 if(hour >= 6 && hour < 12) {
    document.write("<br> Bom dia.");
-   alert("Bom dia!");
+   alert("Bom dia! t");
 } else if(hour < 18) {
    document.write("<br> Boa tarde.");
    alert("Boa tarde!");
